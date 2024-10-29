@@ -1,13 +1,12 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import * as HoverCardPrimitive from "@radix-ui/react-hover-card"
+import * as React from "react";
+import * as HoverCardPrimitive from "@radix-ui/react-hover-card";
+import { useRouter } from "next/router"; // Ensure you are using Next.js router
+import { cn } from "@/lib/utils";
 
-import { cn } from "@/lib/utils"
-
-const HoverCard = HoverCardPrimitive.Root
-
-const HoverCardTrigger = HoverCardPrimitive.Trigger
+const HoverCard = HoverCardPrimitive.Root;
+const HoverCardTrigger = HoverCardPrimitive.Trigger;
 
 const HoverCardContent = React.forwardRef<
   React.ElementRef<typeof HoverCardPrimitive.Content>,
@@ -23,7 +22,37 @@ const HoverCardContent = React.forwardRef<
     )}
     {...props}
   />
-))
-HoverCardContent.displayName = HoverCardPrimitive.Content.displayName
+));
+HoverCardContent.displayName = HoverCardPrimitive.Content.displayName;
 
-export { HoverCard, HoverCardTrigger, HoverCardContent }
+export { HoverCard, HoverCardTrigger, HoverCardContent };
+
+// Component to render cards
+const CardComponent = ({ productId }: { productId: string }) => {
+  const router = useRouter();
+
+  const handleCardHover = () => {
+    router.push(`/app/singleproduct/${productId}`);
+  };
+
+  return (
+    <HoverCard>
+      <HoverCardTrigger
+        onMouseEnter={handleCardHover} // Redirects on hover
+        className="cursor-pointer"
+      >
+        {/* Card content goes here */}
+        <div className="card-content">
+          {/* Your card image or details */}
+          <img src="path/to/image.jpg" alt="Card Image" />
+          <h3>Product {productId}</h3>
+        </div>
+      </HoverCardTrigger>
+      <HoverCardContent>
+        {/* Optional hover content can be added here */}
+      </HoverCardContent>
+    </HoverCard>
+  );
+};
+
+export default CardComponent;

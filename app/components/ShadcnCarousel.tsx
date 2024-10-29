@@ -21,7 +21,7 @@ export const ShadcnCarousel: React.FC<ShadcnCarouselProps> = ({
   const router = useRouter();
 
   const handleCardClick = (productId: string) => {
-    router.push(`/app/product/${productId}`); // Correct route without brackets
+    router.push(`/Product?id=${productId}`); // Pass the product ID to the dynamic route
   };
 
   return (

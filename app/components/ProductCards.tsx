@@ -14,7 +14,7 @@ const ProductCards = () => {
               <div className="hover:translate-x-1 flex justify-between items-center">
                 <a
                   href="#"
-                  className="md:p-3 p-1 group rounded-full bg-white hover:bg-cyan-500 mr-2"
+                  className="md:p-3 p-1 group rounded-full bg-white hover:bg-green-800 mr-2"
                 >
                   {" "}
                   <FaArrowRight className="group-hover:text-white text-black" />
@@ -47,7 +47,7 @@ const ProductCards = () => {
                 <div className="hover:translate-x-1 flex justify-between items-center">
                   <a
                     href="#"
-                    className="md:p-3 p-1 group rounded-full bg-white hover:bg-cyan-500 mr-2"
+                    className="md:p-3 p-1 group rounded-full bg-white hover:bg-green-800 mr-2"
                   >
                     {" "}
                     <FaArrowRight className="group-hover:text-white text-black" />
@@ -72,7 +72,7 @@ const ProductCards = () => {
                     {" "}
                     MEDICINES
                   </h3>
-                  <h2 className=" text-xl font-bold">Medfinder</h2>
+                  <h2 className=" text-xl font-bold">Rukn Al Safa</h2>
                 </div>
                 <div className="flex justify-between items-center">
                   Price:{" "}
@@ -94,7 +94,7 @@ const ProductCards = () => {
               <div className="hover:translate-x-1 flex justify-between items-center">
                 <a
                   href="#"
-                  className="md:p-3 p-1 group rounded-full bg-white hover:bg-cyan-500 mr-2"
+                  className="md:p-3 p-1 group rounded-full bg-white hover:bg-green-800 mr-2"
                 >
                   {" "}
                   <FaArrowRight className="group-hover:text-white text-black" />

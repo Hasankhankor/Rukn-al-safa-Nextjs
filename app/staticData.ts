@@ -243,6 +243,16 @@ export const shuffledProducts: Product[] = [
   },
 ];
 
+
+export const findProductById = (id: string): Product | undefined => {
+  return products.find(product => product.id === id);
+};
+
+export const getRelatedProducts = (category: string): Product[] => {
+  return products.filter(product => product.category === category);
+};
+
+
 export const combinedArray: Product[] = [
   {
     image: image33,
@@ -353,6 +363,9 @@ export interface BlogData {
   image: StaticImageData;
   date: string;
   topic: string;
+  description:string;
+  conclusion:string;
+
 }
 
 export const blogData: BlogData[] = [
@@ -360,29 +373,39 @@ export const blogData: BlogData[] = [
     image: image51,
     date: "14-Oct-2020",
     topic: "Hypertension: Most Commonly Asked",
+    description: "Hypertension, or high blood pressure, is a condition that affects millions worldwide. This blog explores the most commonly asked questions regarding hypertension, including its causes, risk factors, and management strategies. We will delve into lifestyle changes, medications, and monitoring techniques that can help individuals maintain healthy blood pressure levels.",
+    conclusion: "Understanding hypertension is crucial for prevention and management. By adopting a healthy lifestyle and staying informed, individuals can significantly reduce their risk of complications related to high blood pressure."
   },
   {
     image: image52,
     date: "14-Dec-2020",
     topic: "Know All About Robotic Knee Replacement",
+    description: "Robotic knee replacement is a revolutionary surgical technique that offers improved precision and outcomes. This blog provides an in-depth look at the robotic-assisted surgery process, the benefits of this technology, and what patients can expect before, during, and after the procedure.",
+    conclusion: "Robotic knee replacement represents a significant advancement in orthopedic surgery. By understanding this innovative approach, patients can make informed decisions about their treatment options and expectations for recovery."
   },
   {
     image: image55,
     date: "29-Dec-2020",
-    topic: "Can you be hospitalised due to asthama?",
+    topic: "Can you be hospitalised due to asthma?",
+    description: "Asthma is a chronic respiratory condition that can lead to severe complications, including hospitalization. This blog discusses the factors that may necessitate hospitalization for asthma patients, including exacerbations and the importance of recognizing warning signs. It also covers strategies for asthma management to reduce the risk of severe attacks.",
+    conclusion: "Being proactive in managing asthma is essential. By adhering to treatment plans and being aware of symptoms, individuals can minimize the chances of hospitalization and lead healthier lives."
   },
   {
     image: image53,
     date: "24-Oct-2020",
     topic: "Understanding Different Types of Bone",
+    description: "Bones are more than just structural elements of the body; they play vital roles in health and wellbeing. This blog provides insights into the different types of bones, including their functions and the importance of maintaining bone health. We will also touch on conditions like osteoporosis that can affect bone density and strength.",
+    conclusion: "Knowledge of bone types and health is vital for preventing bone-related diseases. Emphasizing nutrition and exercise can greatly enhance bone strength and longevity."
   },
   {
     image: image54,
     date: "15-Dec-2020",
     topic: "Can a Newborn Baby Have Low Sugar Levels?",
+    description: "Hypoglycemia, or low blood sugar levels, can occur in newborns and can lead to serious health issues. This blog explains the causes, symptoms, and treatment options for managing low sugar levels in newborns, ensuring parents are informed and prepared.",
+    conclusion: "Understanding the signs of low sugar levels in newborns is critical for early intervention. By staying vigilant and seeking medical advice, parents can safeguard their newborn's health."
   },
-
 ];
+
 
 
 export interface FeedbackData {

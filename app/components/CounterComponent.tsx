@@ -104,7 +104,7 @@ const CounterComponent = () => {
               <div className="counter__items__name">
                 <a href="">
                   <h3 className="text-3xl font-bold hover:text-cyan-500">
-                    50 Lalk +
+                    50+
                   </h3>
                 </a>
                 <p className="text-gray-500">Families Served</p>

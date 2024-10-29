@@ -46,7 +46,7 @@ const Navbar = () => {
   return (
     <header className="w-[100%]">
       {/* Header start */}
-      <div className="bg-[rgb(112,187,33)] text-white p-[8px] text-[15px]">
+      <div className="bg-green-800 text-white p-[8px] text-[15px]">
         <div className="flex justify-start md:justify-between items-center">
           <div className="ml-2 md:ml-[140px]">
             <p>
@@ -86,19 +86,19 @@ const Navbar = () => {
           <div className="hidden lg:flex flex-col space-y-2 mt-2">
             <div className="flex justify-center items-center">
               {/* Updated the Home button to link directly */}
-              <Link href="/" className="text-lg hover:text-[rgb(112,187,33)]">
+              <Link href="/" className="text-lg hover:text-green-800">
                 Home
               </Link>
-              {["Shop", "Page", "Blog"].map((item) => (
+              {["Shop"].map((item) => (
                 <NavigationMenu key={item}>
                   <NavigationMenuList>
                     <NavigationMenuItem>
-                      <NavigationMenuTrigger className="text-lg hover:text-[rgb(112,187,33)]">
+                      <NavigationMenuTrigger className="text-lg hover:text-green-800">
                         {item}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="flex flex-col justify-start items-center w-36">
-                          <ListItem href="/" title={`${item} 2`} />
+                          <ListItem href="/" title={` 2`} />
                           <ListItem href="/" title={`${item} 3`} />
                           <ListItem href="/" title={`${item} 4`} />
                         </div>
@@ -107,10 +107,10 @@ const Navbar = () => {
                   </NavigationMenuList>
                 </NavigationMenu>
               ))}
-              <Button className="text-lg hover:text-[rgb(112,187,33)]" variant="link">
+              <Button className="text-lg hover:text-green-800" variant="link">
                 On Sale
               </Button>
-              <Button className="text-lg hover:text-[rgb(112,187,33)]" variant="link">
+              <Button className="text-lg hover:text-green-800" variant="link">
                 Contact
               </Button>
             </div>
@@ -126,7 +126,7 @@ const Navbar = () => {
                 required
               />
               <button
-                className="py-3.5 px-8 bg-[rgb(112,187,33)] rounded-full absolute right-[-20px]"
+                className="py-3.5 px-8 bg-green-800 rounded-full absolute right-[-20px]"
                 type="submit"
               >
                 <FaSearch className="text-2xl font-light text-white" />
@@ -137,7 +137,7 @@ const Navbar = () => {
           {/* Sign In / Sign Up Section */}
           <div className="hidden lg:flex justify-center gap-6 font-semibold items-center">
             <SignedOut>
-              <Button onClick={toggleSignIn} className="hover:text-green-500">
+              <Button onClick={toggleSignIn} className="hover:text-green-800">
                 SIGN IN / SIGN UP
               </Button>
             </SignedOut>
@@ -148,7 +148,7 @@ const Navbar = () => {
 
           {/* Cart Icon */}
           <div className="flex items-center gap-4">
-            <Link href="/cart">
+            <Link href="../addtocart">
               <i className="text-2xl hover:text-green-500">🛒</i>
             </Link>
           </div>
@@ -164,7 +164,7 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent className="w-[250px]" side='left'>
               <SheetHeader>
-                <SheetTitle className="mt-5">Welcome to Medilazar</SheetTitle>
+                <SheetTitle className="mt-5">Welcome to Rukn Al Safa</SheetTitle>
                 <SheetDescription>Buy medicines online.</SheetDescription>
               </SheetHeader>
               <div className="grid gap-4 py-4">

@@ -1,3 +1,4 @@
+import { Import } from "lucide-react";
 import Banner from "./components/Banner";
 import Blog from "./components/Blog";
 import CounterComponent from "./components/CounterComponent";
@@ -10,7 +11,7 @@ import ProductCards from "./components/ProductCards";
 import Services from "./components/Services";
 import SignUp from "./components/SignUp";
 import TrendingProduct from "./components/TrendingProduct";
-
+import Footer from "./components/Footer.tsx"
 export default function Home() {
   return (
     <>
@@ -28,6 +29,7 @@ export default function Home() {
       <CounterComponent />
       <Feedback />
       <SignUp />
+      <Footer/>
     </>
   );
 }

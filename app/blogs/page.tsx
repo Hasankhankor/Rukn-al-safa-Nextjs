@@ -10,7 +10,7 @@ const BlogPage = () => {
       <div className="flex justify-center items-center flex-wrap space-x-6"> {/* Added flex-wrap for wrapping the cards */}
         {blogData.map((item, index) => (
           <div key={index} className="flex justify-center items-center flex-col space-y-4 w-[260px]"> {/* Changed space-y-6 to space-y-4 for consistency */}
-            <Link href={`/blogs/${index}`}>
+            <Link  href={`/blogs/${index}`}>
               <Image
                 src={item.image}
                 className="rounded-lg"
