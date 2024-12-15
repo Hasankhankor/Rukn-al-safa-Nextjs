@@ -1,20 +1,19 @@
-import type { Config } from "tailwindcss"
-
+/** @type {import('tailwindcss').Config} */
 const config = {
-  darkMode: ["class"],
+  darkMode: ["class"], // Enables dark mode based on a class (`dark`)
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
-  prefix: "",
+  ],
+  prefix: "", // You can use this if you want to prefix classes globally (e.g., "tw-")
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "2rem", // Padding for containers, apply on large screens
       screens: {
-        "2xl": "1400px",
+        "2xl": "1400px", // Custom breakpoint for 2xl screens
       },
     },
     extend: {
@@ -54,9 +53,9 @@ const config = {
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "var(--radius)", // Larger border radius
+        md: "calc(var(--radius) - 2px)", // Medium border radius
+        sm: "calc(var(--radius) - 4px)", // Smaller border radius
       },
       keyframes: {
         "accordion-down": {
@@ -67,14 +66,20 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        deliver: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '50%': { transform: 'translateX(10%)', opacity: '1' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        deliver: "deliver 0.8s ease-out forwards",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+};
 
-export default config
+export default config;

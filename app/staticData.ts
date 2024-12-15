@@ -54,6 +54,7 @@ export interface Product {
   productName: string;
   mrp: number;
   actualPrice: number;
+
 }
 
 export const products: Product[] = [
@@ -418,33 +419,33 @@ export interface FeedbackData {
 export const feedbackData: FeedbackData[] = [
   {
     image: image61,
-    name:"Eliana Watson",
-    date: "14-Oct-2020",
-    feedback: "Medilazar pharmacy is the best one. Staffs are so supportive and behaved. Medicine price is genuine. Thanks",
+    name: "Ahmed Al-Faisal",
+    date: "14-Oct-2023",
+    feedback: "Medilazar pharmacy provides excellent service. The staff is friendly, and the prices are very reasonable. Highly recommend!",
   },
   {
     image: image62,
-    name:"Rajashri Sarkar",
-    date: "14-Dec-2020",
-    feedback: "Medilazar pharmacy is the best one. Staffs are so supportive and behaved. Medicine price is genuine. Thanks",
+    name: "Ali Al-Saud",
+    date: "14-Dec-2023",
+    feedback: "I had a great experience at Medilazar pharmacy. The staff is very helpful, and I was able to find all the medicines I needed at a good price.",
   },
   {
     image: image65,
-    name:"Elizabeth",
-    date: "29-Dec-2020",
-    feedback: "Medilazar pharmacy is the best one. Staffs are so supportive and behaved. Medicine price is genuine. Thanks",
+    name: "Fatima Al-Rashid",
+    date: "29-Dec-2023",
+    feedback: "Medilazar pharmacy is the best in town. The customer service is excellent, and the prices are affordable. Keep it up!",
   },
   {
     image: image64,
-    name:"Emma stone",
-    date: "15-Dec-2020",
-    feedback: "Medilazar pharmacy is the best one. Staffs are so supportive and behaved. Medicine price is genuine. Thanks",
+    name: "Sara Al-Mansour",
+    date: "15-Dec-2023",
+    feedback: "Fantastic service! The staff is very professional and the pharmacy is well-stocked with high-quality medicines.",
   },
   {
     image: image63,
-    name:"Jenny Smith",
-    date: "24-Oct-2020",
-    feedback: "Medilazar pharmacy is the best one. Staffs are so supportive and behaved. Medicine price is genuine. Thanks",
+    name: "Aliya Al-Shammari",
+    date: "24-Oct-2023",
+    feedback: "Medilazar pharmacy is my go-to place for medical needs. The prices are competitive, and the service is top-notch.",
   },
-
 ];
+

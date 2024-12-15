@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import MobileStickyFooter from "./components/MobileStickyFooter";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import { ClerkProvider, SignIn, SignedOut, UserButton } from "@clerk/nextjs";
-
+import { LanguageProvider } from './context/LanguageContext';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ClerkProvider>
+        <LanguageProvider>
           {/* Navbar should always be at the top */}
           <Navbar />
 
@@ -31,7 +32,7 @@ export default function RootLayout({
           {/* Scroll and Footer */}
           <ScrollToTopButton />
           <MobileStickyFooter />
-
+          </LanguageProvider>
           {/* SignIn modal will be handled by the useSignIn hook */}
         </ClerkProvider>
       </body>

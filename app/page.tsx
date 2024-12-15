@@ -11,10 +11,12 @@ import ProductCards from "./components/ProductCards";
 import Services from "./components/Services";
 import SignUp from "./components/SignUp";
 import TrendingProduct from "./components/TrendingProduct";
-import Footer from "./components/Footer.tsx"
+import Footer from "./components/Footer"
+import Translator from './components/Translator';
 export default function Home() {
   return (
     <>
+     <Translator />
       <Banner />
 
       <DailyDeals />

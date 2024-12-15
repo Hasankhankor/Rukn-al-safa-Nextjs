@@ -23,7 +23,7 @@ const SignUp = () => {
                 required
               />
               <button
-                className="py-3 rounded-3xl bg-cyan-500 text-white border md:rounded-l-none outline-none px-6 md:px-10"
+                className="py-3 rounded-3xl bg-green-700 text-white border md:rounded-l-none outline-none px-6 md:px-10"
                 type="submit"
               >
                 SUBSCRIBE

@@ -65,6 +65,26 @@
     --ring: 216 12.2% 83.9%;
   }
 }
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 18px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #d4d267; /* Light gray background for the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #166534; /* Green color for the scrollbar thumb */
+  border-radius: 20px; /* Rounded scrollbar thumb */
+  border: 3px solid #d4d267; /* Adds space around the thumb */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: bold; /* Make the scrollbar thinner */
+  scrollbar-color: #166534 #e5e7eb; /* Thumb color and track color */
+}
 
 @layer base {
   * {

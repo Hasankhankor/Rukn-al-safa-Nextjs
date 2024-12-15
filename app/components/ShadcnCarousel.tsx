@@ -53,8 +53,7 @@ export const ShadcnCarousel: React.FC<ShadcnCarouselProps> = ({
                   subCategory={item.subCategory}
                   productName={item.productName}
                   mrp={item.mrp}
-                  actualPrice={item.actualPrice}
-                />
+                  actualPrice={item.actualPrice} id={""}                />
               </div>
             </div>
           </CarouselItem>
